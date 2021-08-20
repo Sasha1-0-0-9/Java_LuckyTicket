@@ -1,0 +1,2 @@
+rootProject.name = "LuckyTicket_Java"
+include ':app'
