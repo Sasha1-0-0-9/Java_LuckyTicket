@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/digits"
+        android:id="@+id/etTicketNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -20,29 +20,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bulb" />
+        app:layout_constraintTop_toBottomOf="@+id/imgBulb" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCheckNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
-        android:onClick="check_onClick"
+        android:onClick="checkTicket"
         android:text="@string/check_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/digits" />
+        app:layout_constraintTop_toBottomOf="@+id/etTicketNumber" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgTicket"
         android:contentDescription="@string/app_name"
-        android:layout_width="200sp"
-        android:layout_height="100sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
@@ -52,14 +52,14 @@
         app:srcCompat="@drawable/ic_ticket" />
 
     <ImageView
-        android:id="@+id/bulb"
+        android:id="@+id/imgBulb"
         android:contentDescription="@string/app_name"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imgTicket"
         app:srcCompat="@drawable/ic_grey_bulb" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
